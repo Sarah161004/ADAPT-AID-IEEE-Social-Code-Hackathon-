@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Destination and Payment Method</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Choose Destination and Payment Method</h2>
+    
+    <form id="bookingForm">
+        <label for="destination">Select Destination:</label>
+        <select id="destination" name="destination" required>
+            <option value="" disabled selected>Select destination</option>
+            <option value="paris">Paris</option>
+            <option value="new-york">New York</option>
+            <option value="tokyo">Tokyo</option>
+        </select>
+
+        <label for="paymentMethod">Select Payment Method:</label>
+        <select id="paymentMethod" name="paymentMethod" required>
+            <option value="" disabled selected>Select payment method</option>
+            <option value="credit-card">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="bank-transfer">Bank Transfer</option>
+        </select>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <script>
+        function submitForm() {
+            var destination = document.getElementById('destination').value;
+            var paymentMethod = document.getElementById('paymentMethod').value;
+
+            if (destination && paymentMethod) {
+                // You can perform additional actions here, such as sending data to the server
+                alert('Booking successful!\nDestination: ' + destination + '\nPayment Method: ' + paymentMethod);
+            } else {
+                alert('Please select both destination and payment method.');
+            }
+        }
+    </script>
+</body>
+</html>

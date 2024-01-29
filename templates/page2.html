@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride or Hospital Booking</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #3e1e7a;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="bookingType">Select Booking Type:</label>
+        <select id="bookingType" name="bookingType">
+            <option value="ride">Ride</option>
+            <option value="hospital">Hospital Booking</option>
+            <option value="both">Both</option>
+        </select>
+
+        <!-- Ride Options -->
+        <div id="rideOptions" class="booking-options">
+            <label for="rideType">Select Ride Type:</label>
+            <select id="rideType" name="rideType">
+                <option value="sedan">Sedan</option>
+                <option value="suv">SUV</option>
+                <option value="autorickshaw">Motorbike</option>
+            </select>
+        </div>
+
+        <!-- Hospital Booking Options -->
+        <div id="hospitalOptions" class="booking-options">
+            <label for="hospitalType">Select Hospital Type:</label>
+            <select id="hospitalType" name="hospitalType">
+                <option value="general">General Hospital</option>
+                <option value="specialty">Specialty Hospital</option>
+                <option value="clinic">Clinic</option>
+            </select>
+        </div>
+
+        <!-- Both Booking Options -->
+        <div id="bothOptions" class="booking-options">
+           
+        </div>
+        <button type="button" onclick="book()" >Book Now</button>
+    </form>
+
+    <script>      
+        function book(){
+            console.log("ASDS")
+            window.location = "http://127.0.0.1:5000/page3.html";
+        }                          
+        var rideOptions = document.getElementById('rideOptions');
+        var hospitalOptions = document.getElementById('hospitalOptions');
+        rideOptions.style.display = 'none';
+        hospitalOptions.style.display = 'none';
+        document.getElementById('bookingType').addEventListener('change', function () {
+            
+            var bothOptions     = document.getElementById('bothOptions');
+            var bookOptions = document.getElementById('bookingType')
+            
+            
+            if (this.value === 'ride') {
+                hospitalOptions.style.display = 'none';
+                rideOptions.style.display = 'block';
+            } 
+            else if (this.value === 'hospital') {
+                rideOptions.style.display = 'none';
+                hospitalOptions.style.display = 'block';
+            }
+            else if(this.value === 'both'){
+                rideOptions.style.display = 'block';
+                hospitalOptions.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
