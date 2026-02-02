@@ -8,7 +8,7 @@ b) Voice instructions to provide instructions to users on how to use each featur
 c) Additional features to ensure safety 
 To ensure that only deserving people get access to these facilities , we connect our webapp with the database collected from official sites of hospitals , which enhances user authentication as well.
 
-#Tech stacks
+# Tech stacks-
 Frontend : HTML 
 Backend : Flask (Python microframework)
 
