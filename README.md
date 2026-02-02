@@ -9,8 +9,12 @@ c) Additional features to ensure safety
 To ensure that only deserving people get access to these facilities , we connect our webapp with the database collected from official sites of hospitals , which enhances user authentication as well.
 
 # Tech stacks-
-Frontend : HTML. 
-Backend : Flask (Python microframework).
+Frontend : HTML  
+Backend : Flask (Python microframework)
+
+
+
+
 
 ![ADAPT AID 2](https://github.com/Sarah161004/ADAPT-AID-IEEE-Social-Code-Hackathon-/assets/157943798/9b48d2c7-30b4-4b02-9615-3f1d61a78ab5)
 ![Screenshot 2024-01-29 235224](https://github.com/Sarah161004/ADAPT-AID-IEEE-Social-Code-Hackathon-/assets/157943798/28a4fbf0-f5f3-40de-abbd-d2b6a4150282)
