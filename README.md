@@ -6,8 +6,11 @@ Additional features which we would like to incorporate in our web app:
 a) Voice-to-text conversion to convey the demands of the users
 b) Voice instructions to provide instructions to users on how to use each feature
 c) Additional features to ensure safety 
-To ensure that only deserved  people get access to these facilities , we connect our webapp with the database collected from official sites of hospitals , which enhances user authentication as well.
-We  used HTML for frontend application and the python microframework Flask for backend.
+To ensure that only deserving people get access to these facilities , we connect our webapp with the database collected from official sites of hospitals , which enhances user authentication as well.
+
+#Tech stacks
+Frontend : HTML 
+Backend : Flask (Python microframework)
 
 ![ADAPT AID 2](https://github.com/Sarah161004/ADAPT-AID-IEEE-Social-Code-Hackathon-/assets/157943798/9b48d2c7-30b4-4b02-9615-3f1d61a78ab5)
 ![Screenshot 2024-01-29 235224](https://github.com/Sarah161004/ADAPT-AID-IEEE-Social-Code-Hackathon-/assets/157943798/28a4fbf0-f5f3-40de-abbd-d2b6a4150282)
